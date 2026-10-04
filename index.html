@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meet six football icons, from the stars of a generation to the legends who inspired them.">
+  <title>Football Stars | The beautiful game</title>
+  <link rel="icon" href="data:,">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md py-3" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home"><span class="brand-ball" aria-hidden="true">&#9917;</span> FOOTBALL<span class="brand-light">STARS</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-md-3">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stars">The stars</a></li>
+          <li class="nav-item"><a class="nav-link" href="#legends">The legends</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Task 2: Bootstrap columns and responsive ordering. -->
+    <section id="home" class="hero py-5" aria-labelledby="home-title">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <p class="eyebrow mb-3">THE PEOPLE BEHIND THE BEAUTIFUL GAME</p>
+            <h1 id="home-title">Different eras.<br>One <em>beautiful</em><br>game.</h1>
+            <p class="hero-description mt-4 mb-4">The vision. The flair. The unforgettable moments. Meet the players who make football more than a game.</p>
+            <a class="btn btn-lime px-4 py-3" href="#stars">Meet the stars <span aria-hidden="true">&#8599;</span></a>
+            <p class="hero-note d-none d-md-block mt-4 mb-0">SIX ICONS <span aria-hidden="true">/</span> A SHARED LOVE OF FOOTBALL</p>
+          </div>
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <figure class="hero-figure mb-0">
+              <img class="hero-image" src="assets/images/messi.jpg" alt="Lionel Messi wearing the Argentina national team shirt">
+              <figcaption class="d-flex justify-content-between align-items-center gap-3 p-3">
+                <span><strong>Lionel Messi</strong><br><span class="photo-label">Argentina · Forward</span></span>
+                <span class="figure-number" aria-hidden="true">10</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task 1: only custom classes in this section; no Bootstrap grid or utilities. -->
+    <section id="stars" class="stars-section" aria-labelledby="stars-title">
+      <div class="stars-inner">
+        <div class="stars-heading">
+          <div><p class="section-kicker">01 / THE STARS</p><h2 id="stars-title">Talent without limits.</h2></div>
+          <p class="stars-intro">Three distinct styles. Three reasons to fall in love with football.</p>
+        </div>
+        <div class="stars-grid">
+          <article class="star-card">
+            <img class="star-photo" src="assets/images/messi.jpg" alt="Lionel Messi in an Argentina shirt" loading="lazy">
+            <div class="star-body">
+              <p class="player-country">ARGENTINA <span>10</span></p>
+              <h3>Lionel Messi</h3>
+              <p class="player-role">The playmaker</p>
+              <p>Close control, clever passes and a left foot that turns small spaces into big opportunities.</p>
+              <p class="player-trait">VISION &amp; CREATIVITY</p>
+            </div>
+          </article>
+          <article class="star-card">
+            <img class="star-photo" src="assets/images/ronaldo.jpg" alt="Cristiano Ronaldo wearing the Portugal national team shirt" loading="lazy">
+            <div class="star-body">
+              <p class="player-country">PORTUGAL <span>7</span></p>
+              <h3>Cristiano Ronaldo</h3>
+              <p class="player-role">The goalscorer</p>
+              <p>Explosive movement, powerful finishing and the determination to make every chance count.</p>
+              <p class="player-trait">POWER &amp; PRECISION</p>
+            </div>
+          </article>
+          <article class="star-card">
+            <img class="star-photo" src="assets/images/mbappe.jpg" alt="Kylian Mbappé wearing the France national team shirt" loading="lazy">
+            <div class="star-body">
+              <p class="player-country">FRANCE <span>10</span></p>
+              <h3>Kylian Mbappé</h3>
+              <p class="player-role">The game changer</p>
+              <p>Electric pace and direct attacking play turn a moment of open space into a threat on goal.</p>
+              <p class="player-trait">SPEED &amp; CONFIDENCE</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task 2: Bootstrap card components with a 1 / 2 / 3 column grid. -->
+    <section id="legends" class="legends-section py-5" aria-labelledby="legends-title">
+      <div class="container">
+        <div class="row align-items-end g-3 mb-4">
+          <div class="col-12 col-md-8"><p class="section-kicker mb-2">02 / THE LEGENDS</p><h2 id="legends-title" class="mb-0">Greatness never fades.</h2></div>
+          <div class="col-12 col-md-4"><p class="text-secondary mb-0">Before today's stars, these icons helped shape the game.</p></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card legend-card h-100">
+              <img src="assets/images/pele.jpg" class="card-img-top legend-photo" alt="Pelé wearing a Brazil football shirt" loading="lazy">
+              <div class="card-body p-4"><p class="player-country">BRAZIL <span>01</span></p><h3 class="card-title">Pelé</h3><p class="card-text text-secondary mb-0">Imagination, skill and joyful attacking football. A Brazilian icon whose influence reaches far beyond the pitch.</p></div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card legend-card h-100">
+              <img src="assets/images/maradona.jpg" class="card-img-top legend-photo" alt="Portrait of Argentine football legend Diego Maradona" loading="lazy">
+              <div class="card-body p-4"><p class="player-country">ARGENTINA <span>02</span></p><h3 class="card-title">Diego Maradona</h3><p class="card-text text-secondary mb-0">Fearless dribbling and extraordinary balance. A player who could carry the ball, and a whole team's hopes, forward.</p></div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card legend-card h-100">
+              <img src="assets/images/zidane.jpg" class="card-img-top legend-photo" alt="Portrait of French football legend Zinedine Zidane" loading="lazy">
+              <div class="card-body p-4"><p class="player-country">FRANCE <span>03</span></p><h3 class="card-title">Zinedine Zidane</h3><p class="card-text text-secondary mb-0">An elegant first touch and remarkable composure. A midfielder who made the hardest parts of football look effortless.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section py-5" aria-labelledby="about-title">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-12 col-md-5"><p class="section-kicker mb-2">03 / ABOUT THE PROJECT</p><h2 id="about-title">Made for the<br>love of football.</h2></div>
+          <div class="col-12 col-md-7"><p class="mb-3">Football connects people across countries and generations. This small collection celebrates six players with different stories and one shared stage.</p><p class="text-secondary mb-0">Created by Ardak Kazykhan for Responsive Web Design, Assignment 3. The stars section uses custom CSS media queries; the rest of the page uses the Bootstrap grid.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><p class="mb-0">FOOTBALL STARS <span class="footer-divider">/</span> Ardak Kazykhan · IT-2510</p><a href="#home">Back to top &#8593;</a></div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

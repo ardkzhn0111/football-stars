@@ -1,0 +1,80 @@
+/* Shared colours and typography. Bootstrap is loaded before this file. */
+:root {
+  --forest: #103d31;
+  --ink: #182e26;
+  --muted: #617169;
+  --paper: #f7f8f2;
+  --lime: #d7f279;
+}
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: Arial, Helvetica, sans-serif; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 3px solid #58901a; outline-offset: 4px; }
+h1, h2, h3 { font-weight: 700; letter-spacing: -0.045em; }
+h2 { font-size: clamp(2rem, 4vw, 2.8rem); }
+h3 { font-size: 1.5rem; }
+.navbar { background: var(--paper); border-bottom: 1px solid #dfe5d9; }
+.navbar-brand { font-size: 0.95rem; font-weight: 800; letter-spacing: -0.035em; }
+.brand-light { font-weight: 400; margin-left: -0.35rem; }
+.brand-ball { font-size: 1.6rem; }
+.nav-link { color: var(--ink); font-size: 0.9rem; font-weight: 600; }
+.nav-link:hover { color: #477926; }
+.hero { background: var(--forest); color: white; }
+.eyebrow, .section-kicker { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.13em; }
+.eyebrow { color: var(--lime); }
+h1 { font-size: clamp(2.7rem, 5.5vw, 4.65rem); line-height: 1.02; }
+h1 em { color: var(--lime); font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+.hero-description { color: #d9e3dd; line-height: 1.7; font-size: 1rem; }
+.btn-lime { background: var(--lime); color: var(--forest); border-radius: 0.25rem; font-weight: 700; }
+.btn-lime:hover, .btn-lime:focus { background: #e5ffa3; color: var(--forest); }
+.btn-lime span { margin-left: 1.5rem; }
+.hero-note { color: #c2d3c7; font-size: 0.65rem; letter-spacing: 0.08em; }
+.hero-note span { padding-inline: 0.65rem; }
+.hero-figure { background: #1e4b3f; border-radius: 0.3rem; overflow: hidden; }
+.hero-image { width: 100%; aspect-ratio: 6 / 5; object-fit: cover; object-position: center 25%; }
+.photo-label { color: #d2e0d7; font-size: 0.8rem; }
+.figure-number { font-family: Georgia, serif; font-size: 2.5rem; line-height: 1; color: var(--lime); }
+
+/* Task 1: mobile-first layout, independent of Bootstrap classes. */
+.stars-section { padding: 3rem 0; }
+.stars-inner { width: 90%; margin-inline: auto; }
+.stars-heading { display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 1.7rem; }
+.stars-heading h2 { font-size: 2rem; margin: 0; }
+.section-kicker { color: #50663d; margin: 0 0 0.6rem; }
+.stars-intro { color: var(--muted); margin: 0; line-height: 1.6; }
+.stars-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+.star-card { min-width: 0; background: white; border: 1px solid #dce3d9; border-radius: 0.3rem; overflow: hidden; }
+.star-photo { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 25%; }
+.star-body { padding: 1.4rem; }
+.player-country { display: flex; justify-content: space-between; align-items: center; color: #546d4a; font-weight: 700; font-size: 0.65rem; letter-spacing: 0.1em; margin-bottom: 0.65rem; }
+.player-country span { color: #6a7765; font-size: 0.9rem; }
+.star-body h3 { margin: 0 0 0.3rem; }
+.player-role { color: #36553b; font-size: 0.83rem; margin-bottom: 1rem; }
+.star-body > p:not(.player-country):not(.player-role):not(.player-trait) { color: var(--muted); line-height: 1.65; font-size: 0.92rem; margin: 0 0 1.3rem; }
+.star-body .player-trait { padding-top: 0.9rem; border-top: 1px solid #e6eadf; font-size: 0.63rem; font-weight: 700; letter-spacing: 0.1em; margin: 0; color: #395b38; }
+
+@media (min-width: 768px) {
+  .stars-grid { grid-template-columns: repeat(2, 1fr); }
+  .stars-section { padding-block: 4rem; }
+  .stars-heading h2 { font-size: 2.6rem; }
+  .stars-inner { width: 90%; }
+}
+@media (min-width: 992px) {
+  .stars-grid { grid-template-columns: repeat(3, 1fr); gap: 1.75rem; }
+  .stars-heading { flex-direction: row; justify-content: space-between; align-items: end; gap: 3rem; }
+  .stars-heading > div { flex: 3; }
+  .stars-intro { flex: 2; }
+  .stars-inner { width: 87.5%; }
+}
+
+/* Task 2: colours and image treatment; Bootstrap controls the layout. */
+.legends-section { background: #eaf0e4; }
+.legend-card { border-color: #d8dfd1; border-radius: 0.3rem; overflow: hidden; background: #fdfefa; }
+.legend-photo { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 20%; filter: grayscale(100%); }
+.legend-card .card-text { font-size: 0.92rem; line-height: 1.65; }
+.about-section { background: #f7f8f2; }
+.about-section p { line-height: 1.7; }
+footer { border-top: 1px solid #dce3d9; font-size: 0.75rem; }
+footer a { font-weight: 700; text-decoration: none; }
+.footer-divider { color: #86937e; margin-inline: 0.5rem; }
